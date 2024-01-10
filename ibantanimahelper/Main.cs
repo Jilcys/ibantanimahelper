@@ -42,9 +42,6 @@ namespace ibantanimahelper
         {
             var test = new Repository();
             Console.WriteLine(test.getData());
-        }
-       
-
-    }
-    
+        }       
+    }    
 }
