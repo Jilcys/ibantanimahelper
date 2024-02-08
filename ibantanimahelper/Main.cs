@@ -13,10 +13,9 @@ namespace ibantanimahelper
 
     public class findIban
     {
-        public string IBANBUL(string iban)
+        public string TrimIBAN(string iban)
         {
-           
-            string IBAN = iban;            
+            string IBAN = iban;
             string trimmedIBAN = Regex.Replace(IBAN, @"\s+", "");
             string Code;
             if (trimmedIBAN[6].ToString() == "0")
@@ -27,6 +26,13 @@ namespace ibantanimahelper
             {
                 Code = trimmedIBAN[6].ToString() + trimmedIBAN[7].ToString() + trimmedIBAN[8].ToString();
             }
+            return Code;
+        }
+        public string IBANBUL(string iban)
+        {
+
+            string Code = TrimIBAN(iban);            
+            
             var Codes = new Repository();
             var bankname = Codes.getData();
             for (int i = 0; i < bankname.Count; i++)
@@ -38,10 +44,27 @@ namespace ibantanimahelper
             }
             return null;
         }
+        public string SWIFT(string iban)
+        {
+            string Code = TrimIBAN(iban); 
+            
+            var Codes = new Repository();
+            var swift = Codes.getSWIFT();
+            for (int i = 0; i < swift.Count; i++)
+            {
+                if (Code == swift.ElementAt(i).Key.ToString())
+                {
+                    return swift.ElementAt(i).Value;
+                }
+            }
+            return null;
+
+        }
         public void test()
         {
-            var test = new Repository();
-            Console.WriteLine(test.getData());
+            
+            
+
         }       
     }    
 }

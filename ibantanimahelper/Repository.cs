@@ -225,6 +225,223 @@ namespace ibantanimahelper
 
 
         }
+        public Dictionary<int, string> getSWIFT()
+        {
+            var BankCodes = new Dictionary<int, string>()
+            {
+                {
+                    1,
+                    "TCMBTR2A"
+                },
+                {
+                    4,
+                    " "
+                },
+                {
+                    10,
+                    "TCBZTR2A"
+                },
+                {
+                    12,
+                    "TRHBTV2A"
+                },
+                {
+                    14,
+                    "TSKBTRIS"
+                },
+                {
+                    15,
+                    "TVBATR2A"
+                },
+                {
+                    16,
+                    "TIKBTR2A"
+                },
+                {
+                    17,
+                    " "
+                },
+                {
+                    29,
+                    " "
+                },
+                {
+                    32,
+                    "TEBUTRIS"
+                },
+                {
+                    46,
+                    "AKBKTRIS"
+                },
+                {
+                    59,
+                    "SEKETR2A"
+                },
+                {
+                    62,
+                    "TGBATRIS"
+                },
+                {
+                    64,
+                    "ISBKTRIS"
+                },
+                {
+                    67,
+                    "YAPITRIS"
+                },
+                {
+                    91,
+                    " "
+                },
+                {
+                    92,
+                    "CITITRIX"
+                },
+                {
+                    94,
+                    " "
+                },
+                {
+                    96,
+                    " "
+                },
+                {
+                    98,
+                    " "
+                },
+                {
+                    99,
+                    "INGBTRIS"
+                },
+                {
+                    100,
+                    "ADABTRIS"
+                },
+                {
+                    103,
+                    "FBHLTRIS"
+                },
+                {
+                    108,
+                    "TBNKTRIS"
+                },
+                {
+                    109,
+                    " "
+                },
+                {
+                    111,
+                    "FNNBTRIS"
+                },
+                {
+                    115,
+                    " "
+                },
+                {
+                    116,
+                    " "
+                },
+                {
+                    121,
+                    " "
+                },
+                {
+                    122,
+                    " "
+                },
+                {
+                    123,
+                    "HSBCTRIX"
+                },
+                {
+                    124,
+                    " "
+                },
+                {
+                    125,
+                    "TEKSTRIS"
+                },
+                {
+                    129,
+                    " "
+                },
+                {
+                    132,
+                    " "
+                },
+                {
+                    134,
+                    "DENITRIS"
+                },
+                {
+                    135,
+                    "ANDLTRIS"
+                },
+                {
+                    137,
+                    " "
+                },
+                {
+                    138,
+                    " "
+                },
+                {
+                    139,
+                    " "
+                },
+                {
+                    141,
+                    " "
+                },
+                {
+                    142,
+                    " "
+                },
+                {
+                    143,
+                    "CAYTTRIS"
+                },
+                {
+                    146,
+                    "ODEATRIS"
+                },
+                {
+                    147,
+                    " "
+                },
+                {
+                    148,
+                    " "
+                },
+                {
+                    203,
+                    "BTFHTRIS"
+                },
+                {
+                    205,
+                    "KTEFTRIS"
+                },
+                {
+                    206,
+                    "AFKBTRIS"
+                },
+                {
+                    209,
+                    "TCZBTR2A"
+                },
+                {
+                    210,
+                    " "
+                },
+                {
+                    806,
+                    " "
+                }
+            };
+            return BankCodes;
+
+
+        }
 
     }
     
