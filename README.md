@@ -7,3 +7,4 @@ using ibantanimahelper; </br>
 
 var x = new ibantanimahelper.findIban(); </br>
 Console.WriteLine(x.IBANBUL("TR83 0020 3000 0000 0000 0000 01")); </br>
+Console.WriteLine(x.SWIFT("TR83 0020 3000 0000 0000 0000 01")); </br>
