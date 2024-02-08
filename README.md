@@ -1,4 +1,4 @@
-Basic NuGet package for finding bank name from TR Ibans </br>
+Basic NuGet package for finding bank names and swift codes from TR Ibans </br>
 <a>https://www.nuget.org/packages/ibantanimahelper/</a></br>
 
 
