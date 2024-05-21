@@ -243,7 +243,7 @@ namespace ibantanimahelper
                 },
                 {
                     12,
-                    "TRHBTV2A"
+                    "TRHBTR2A"
                 },
                 {
                     14,
